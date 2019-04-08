@@ -1,57 +1,301 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-nav ul a,
-nav .brand-logo {
-  color: #444;
+html {
+  scroll-behavior: smooth;
 }
 
-p {
-  line-height: 2rem;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #181923;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
-.button-collapse {
-  color: #26a69a;
-}
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1280px;
   height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
+  width: 96%;
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+  /* box-shadow: 10px 9px 73px -17px rgba(0,0,0,0.75); */
+  /* -webkit-box-shadow: 10px 9px 73px -17px rgba(0,0,0,0.75); */
+  /* -moz-box-shadow: 10px 9px 73px -17px rgba(0,0,0,0.75); */
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
+/*#region header*/
+header {
+  background-color: #222431;
+  position: static;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+
+  padding: 210px 50px 20px 50px;
+
+  padding-top: 150px;
+}
+
+header > .cardImg {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/blur-bokeh-dark-hued.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 4px 4px 0 0;
+
+  border-bottom: solid 3px rgb(142, 33, 243);
+}
+
+header > .avatar {
+  margin: 0 0 10px 0;
+  position: relative;
+  display: inline-block;
+  width: 200px;
+
+  transform: rotate(-5deg);
+}
+
+header > .avatar > img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+  border: 3px solid rgb(142, 33, 243);
+}
+
+header > .name {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+header > .desc {
+  /* color: #2196f3; */
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+header > .icons {
+  font-size: 23px;
+}
+.tag {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  background-color: #1e1e23;
+  padding: 10px;
+  border-radius: 20px;
+  width: 42px;
+  height: 50px;
+}
+
+/*#endregion*/
+
+/*#region nav */
+nav {
+  position: relative;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+nav > ol {
+  list-style: none;
+  /* margin-top: 10px; */
+}
+nav > ol > li {
+  display: inline-block;
+  /* background-color: #31313a; */
+  /* padding: 15px; */
+  /* height: 50px; */
+  /* width: 127px; */
+  padding: 20px;
+}
+nav > ol > li > a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 20px;
+
+  font-weight: bold;
+}
+nav > ol > li > a:hover {
+  /* background-color: #1e1e23; */
+  color: rgb(142, 33, 243) !important;
+}
+nav > ol > li > a:visited {
+  color: white;
+}
+/*#endregion*/
+
+/*#region Programing Desc*/
+section {
+  margin-top: 10px;
+  padding: 20px 0px;
+  /* background-color: #31313a; */
+  border-radius: 4px;
+}
+
+section > .content {
+  padding: 20px 20px;
+  font-size: 18px;
+  text-align: left;
+}
+
+
+.dark-card {
+  padding: 20px;
+  background-color: #222431;
+  border-radius: 5px;
+
+  margin-bottom: 10px;
+
+
+  box-shadow: 10px 9px 73px -17px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 9px 73px -17px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 9px 73px -17px rgba(0,0,0,0.75);
+}
+
+section > .content > p {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+section .content > .subtitle {
+  margin: 16px 0px;
+}
+
+/* #ProgrammingSection > .logos{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+#ProgrammingSection > .logos > .img{
+  display: inline-block;
+}
+
+
+#ProgrammingSection > .logos > .img > img{
+  max-width: 100%;
+  max-height: 200px;
+} */
+
+/*#endregion*/
+
+/*#region Projects*/
+
+.project-card {
+  background-color: #222431;
+  border-radius: 5px;
+
+  margin-bottom: 10px;
+
+
+  box-shadow: 10px 9px 73px -17px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 9px 73px -17px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 9px 73px -17px rgba(0,0,0,0.75);
+}
+
+.project-card > .poject-desc {
+  display: inline-block;
+  padding: 20px 20px;
+}
+
+.project-card > .poject-desc > .poject-title {
+  margin-bottom: 5px;
+}
+
+.poject-img-top {
+  width: 100%;
+}
+
+/*#endregion*/
+
+#toTop {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  background-color: #222431;
+  padding: 10px;
+  color: white !important;
+  text-decoration: none;
+  border-radius: 5px;
+
+  font-weight: bold;
+  z-index: 999;
+}
+#toTop:hover {
+  color: rgb(142, 33, 243) !important;
+}
+
+#waveform {
+  margin: 10px 0px;
+  background-color: #222431;
+  border-radius: 5px;
+  overflow: hidden;
+
+  box-shadow: 10px 9px 73px -17px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 9px 73px -17px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 9px 73px -17px rgba(0,0,0,0.75);
+}
+
+.play-button {
+  /* background-color: #1e1e23; */
+  padding: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  border: solid #fff 2px;
+  transition: all 0.8s;
+
+  cursor: pointer;
+}
+.play-button:hover{
+  background-color: #8e21f3;
+  border: solid #8e21f3 2px;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 70%;
+  }
+
+  header > .avatar {
+    width: 300px;
+  }
+
+  header > .cardImg {
+    height: 500px;
+  }
+  
+  header{
+    padding-top: 210px;
+  }
+
+  section > .content {
+    /* padding: 20px 10%; */
+    font-size: 20px;
   }
 }
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
+@media (min-width: 1200px) {
+  .container {
+    width: 50%;
+  }
 }
