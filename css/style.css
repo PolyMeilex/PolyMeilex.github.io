@@ -167,8 +167,8 @@ section > .content {
   -moz-box-shadow: 10px 9px 73px -17px rgba(0,0,0,0.75);
 }
 
-section > .content > p {
-  margin-bottom: 10px;
+#ProgrammingSection .content p {
+  margin-top: 10px;
   font-weight: 400;
 }
 
