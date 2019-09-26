@@ -89,7 +89,7 @@ header #info #info__text .name {
 
 @media screen and (min-width: 630px) {
   header {
-    padding-top: 180px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
   header #info {
@@ -264,5 +264,78 @@ header #info #info__text .name {
 main#app {
   width: 100%;
   height: 500px;
+}
+
+.edu-card {
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.edu-card .title {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.edu-card .sub-title {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.edu-card .left,
+.edu-card .right {
+  width: 50%;
+}
+
+.edu-card .right {
+  text-align: center;
+  padding-top: 35px;
+}
+
+@media screen and (min-width: 630px) {
+  .edu-card {
+    width: 30%;
+  }
+}
+
+.proj-card {
+  background-color: #14141d;
+  color: white;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.proj-card .baner {
+  width: 100%;
+}
+
+.proj-card .baner img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.proj-card .content {
+  padding: 20px;
+}
+
+.proj-card .content .title {
+  margin: 0px;
+}
+
+.proj-card .content .title a {
+  text-decoration: none;
+  color: #bf187a;
 }
 /*# sourceMappingURL=style.css.map */
