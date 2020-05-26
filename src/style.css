@@ -89,8 +89,8 @@ header #info #info__text .name {
 
 @media screen and (min-width: 630px) {
   header {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   header #info {
     -ms-flex-wrap: nowrap;
@@ -224,9 +224,7 @@ header #info #info__text .name {
 }
 
 #card-holder.small .card:hover .card__footer {
-  margin: 0px;
   text-align: center;
-  height: 30%;
   opacity: 1;
   visibility: visible;
 }
@@ -261,81 +259,81 @@ header #info #info__text .name {
   color: white;
 }
 
-main#app {
-  width: 100%;
-  height: 500px;
+.projects {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  padding: 0px 20px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
-.edu-card {
-  background-color: #fff;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  width: 90%;
-  margin: auto;
-  margin-top: 10px;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.edu-card .title {
-  text-align: center;
-  margin-bottom: 0px;
-}
-
-.edu-card .sub-title {
-  margin-top: 0px;
-  text-align: center;
-}
-
-.edu-card .left,
-.edu-card .right {
-  width: 50%;
-}
-
-.edu-card .right {
-  text-align: center;
-  padding-top: 35px;
-}
-
-@media screen and (min-width: 630px) {
-  .edu-card {
-    width: 30%;
-  }
-}
-
-.proj-card {
+.projects .proj-card {
   background-color: #14141d;
   color: white;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  width: 50%;
+  width: 100%;
   margin: auto;
   border-radius: 5px;
   margin-top: 20px;
+  height: 100%;
 }
 
-.proj-card .baner {
+.projects .proj-card .baner {
   width: 100%;
 }
 
-.proj-card .baner img {
+.projects .proj-card .baner img {
   width: 100%;
+  vertical-align: middle;
   border-radius: 5px;
 }
 
-.proj-card .content {
+.projects .proj-card .baner.neothesia-gif {
+  background-image: url(../img/proj/neothesia-gif.gif);
+  background-size: cover;
+  background-position: 0px 90%;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.projects .proj-card .baner.neothesia-gif img {
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+}
+
+.projects .proj-card:hover .baner.neothesia-gif img {
+  opacity: 0;
+}
+
+.projects .proj-card .content {
   padding: 20px;
 }
 
-.proj-card .content .title {
+.projects .proj-card .content .title {
   margin: 0px;
 }
 
-.proj-card .content .title a {
+.projects .proj-card .content .title a {
   text-decoration: none;
   color: #bf187a;
+  margin-right: 5px;
+}
+
+.projects .proj-card .content .badge {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 946px) {
+  .projects {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    padding: 0px 15%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
